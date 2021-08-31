@@ -1,8 +1,12 @@
-#!/bin/sh
-
 kotlint () {
+
+	if [ "$#" -ne 1 ]; then
+		echo "Pls pass files"
+		return 1
+	fi
+
 	for x in $*
 	do
-		`ktlint -F $x`
+		echo `ktlint -F $x`
 	done
 }
