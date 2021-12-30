@@ -1,2 +1,2 @@
 killall Docker;
-/Applications/Docker.app
+open /Applications/Docker.app
